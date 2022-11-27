@@ -32,4 +32,10 @@ print(a_set)
 a_bool = True
 
 if a_bool:  # false for 0, "", [], (), {}, None
-    print("This is true")
+   print("This is true")
+
+print()
+hobby = "sleeping"
+print("I like " + hobby + " a lot")
+print("I like {} a lot".format(hobby))
+print(f "I like {hobby} a lot")

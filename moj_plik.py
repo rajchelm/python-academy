@@ -6,4 +6,5 @@ movie = {
     "avability": ["cinema", "vod", "dvd"],
     "actors": ("leonardo", "abc", "many_others")
 }
-print(movie);
+print(movie)
+print(f"{movie['title']} is a movie available from {movie['year']}")
