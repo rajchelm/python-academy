@@ -116,7 +116,22 @@
 
 
 
-name = "Henryk"
-surname = "Sienkiewicz"
-book_name = "Potop"
-print( "%s %s: %s" % (name, surname, book_name))
+# name = "Henryk"
+# surname = "Sienkiewicz"
+# book_name = "Potop"
+# print( "%s %s: %s" % (name, surname, book_name))
+
+
+
+# try:
+#    1/1
+#    print("1")
+# except ZeroDivisionError:
+#    print("2")
+# else:
+#    print("3")
+# finally:
+#    print("4")
+
+
+
