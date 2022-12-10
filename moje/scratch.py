@@ -135,3 +135,26 @@
 
 
 
+try:
+   user_exists("john")
+except UserNotFoundException:
+   print("Użytkownik nie istnieje w systemie!")
+else:
+   print("Użytkownik istnieje w systemie!")
+
+
+   class UserNotFoundException(Exception):
+       pass
+
+
+   def user_exists(username):
+       if username not in ["john", "mike"]:
+           raise UserNotFoundException()
+
+
+   try:
+       user_exists("john")
+   except UserNotFoundException:
+       print("1")
+   else:
+       print("2")
