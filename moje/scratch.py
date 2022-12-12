@@ -160,13 +160,31 @@
 #        print("2")
 
 
-numbers = [2, 4, 8]
+# numbers = [2, 4, 8]
+#
+# try:
+#    iterator = iter(numbers)
+#    print(next(iterator))
+#    print(next(iterator))
+#    print(next(iterator))
+#    print(next(iterator))
+# except StopIteration:
+#    print("Iteracja zakończona")
 
-try:
-   iterator = iter(numbers)
-   print(next(iterator))
-   print(next(iterator))
-   print(next(iterator))
-   print(next(iterator))
-except StopIteration:
-   print("Iteracja zakończona")
+
+# import requests
+# ip = requests.get('https://api.ipify.org').json
+# print('My public IP address is: {}'.format(ip))
+
+
+# def pow_1(digit):
+#    return digit * digit
+#
+# pow_2 = lambda digit: digit * digit
+# print(pow_1(4))
+# print(pow_2(4))
+
+def my_function():
+  print("Hello from a function")
+
+my_function()
