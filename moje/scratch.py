@@ -184,7 +184,72 @@
 # print(pow_1(4))
 # print(pow_2(4))
 
-def my_function():
-  print("Hello from a function")
+# def my_function():
+#   print("Hello from a function")
+#
+# my_function()
 
-my_function()
+
+#help("modules")
+
+
+# def add(digit_a, digit_b):
+#    return digit_a + digit_b
+
+# def sub(digit_a, digit_b):
+#    return digit_a - digit_b
+#
+# if __name__ == "__main__":
+#    print("1 + 2 = ", add(1, 2))
+#    print("4 - 3 = ", sub(4, 3))
+#
+# import mymodule
+#
+# print("Wynik dodawania: " + str(mymodule.add(1, 2)))
+
+
+# import requests
+#
+# x = requests.get('https://w3schools.com')
+# print(x.status_code)
+
+books = {
+    "store": {
+        "book": [
+            {
+                "category": "reference",
+                "author": "Nigel Rees",
+                "title": "Sayings of the Century",
+                "price": 8.95
+            },
+            {
+                "category": "fiction",
+                "author": "Evelyn Waugh",
+                "title": "Sword of Honour",
+                "price": 12.99
+            },
+            {
+                "category": "fiction",
+                "author": "Herman Melville",
+                "title": "Moby Dick",
+                "isbn": "0-553-21311-3",
+                "price": 8.99
+            },
+            {
+                "category": "fiction",
+                "author": "J. R. R. Tolkien",
+                "title": "The Lord of the Rings",
+                "isbn": "0-395-19395-8",
+                "price": 22.99
+            }
+        ],
+        "bicycle": {
+            "color": "red",
+            "price": 19.95
+        }
+    },
+    "expensive": 10
+}
+list_of_books = books["store"]["book"]
+for book in list_of_books:
+   print(book["author"])
