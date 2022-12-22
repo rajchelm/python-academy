@@ -1,10 +1,14 @@
+import unittest
+
 import requests
 
-# res = requests.get("https://api.punkapi.com/v2/beers?brewed_before=01-2011&brewed_after=12-2009")
-# beers_list = res.json()
-# status_code = res.status_code
-# raw_status_code = res.text
-# print(res)
 
-res = requests.get("https://api.ipify.org/?format=json")
-print(res)
+class TestIP(unittest.TestCase):
+
+    def test_my_ip(self):
+        response_body = requests.get("https://api.ipify.org/?format=json").json()
+        self.assertRegex(response_body["ip"], "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}")
+
+
+if __name__ == '__main__':
+    unittest.main()

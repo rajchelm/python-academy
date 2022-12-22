@@ -1,17 +1,23 @@
+import unittest
 import requests
-import json
 
-nbp = requests.get("http://api.nbp.pl/api/exchangerates/tables/a").json()
+class PokemonTest(unittest.TestCase):
 
-x = nbp[0]
-print("x - wartość zmiennej x: ", x)
-print()
+    def setUp(self) -> None:
+        self.url = "https://pokeapi.co/api/v2/pokemon"
 
-y = x["rates"]
-print("y - Wartość klucza rates: ", y)
+    def test_list_of_pokemon(self):
+        params = {
+            "limit": 100000,
+            "offset": 0
+        }
+        res_body = requests.get(self.url).json()
 
-print()
-for curr in y:
-    print()
-    for key, value in curr.items():
-        print(key + ": ", value)
+        self.assertEqual(25, len(res_body))
+        self.assertEqual(1, res_body[0]["id"])
+        self.assertEqual(25, res_body[-1]["id"])
+
+
+
+if __name__ == '__main__':
+    unittest.main()
