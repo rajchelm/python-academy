@@ -1,11 +1,13 @@
-import requests
+experience = 2
+languages = ["python", "typescript", "javascript", "java"]
+contractType = "b2b"
 
-nbp = requests.get("http://api.nbp.pl/api/exchangerates/tables/a").json()
-currencies = nbp[0]["rates"]
-print("y - Wartość klucza rates - kolejna lista z walutami:", "\n", currencies)
-print()
 
-for curr in currencies:
-    print()
-    for key, value in curr.items():
-        print(key + ":", value)
+if "python" in languages: # and "java" in languages:
+    print("zna python")
+#     if contractType == "b2b" or contractType == "employment":
+#         print("kandydat przyjęty")
+#     else:
+#         print("kandydat nieprzyjęty")
+# else:
+#     print("kandydat nie spełnia podstawowych warunków")
