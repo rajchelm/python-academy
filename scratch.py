@@ -1,6 +1,2 @@
-raining = False
-haveUmbrella = False
-temperature = -5
-
-if raining:
-    print(temperature)
+x = 12.34567
+print(round(x, 2))
