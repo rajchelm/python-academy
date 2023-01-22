@@ -1,2 +1,3 @@
-x = 12.34567
-print(round(x, 2))
+employee = {"name":"Jasiek", "email":"jasiek@jasiek.pl", "rank":"programmer", "salary":8000}
+employee["salary"] *= 1.5
+print(employee)

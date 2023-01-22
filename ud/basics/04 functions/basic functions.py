@@ -8,6 +8,7 @@ ale zgodne z wymaganiami pythona. Blok kodu funkcji rozpoczyna się dwukropkiem,
 Funkcja może zwrócić wartość za pomocą słowa kluczowego "return"
 Wywołanie funkcji wykonuje się za pomocą jej nazwy oraz nawiasów okrągłych, przekazujemy również wewnątrz
 nawiasów listę parametrów
+Parametry są umieszczone w definicji funkcji a argumenty to konkretne dane przekazywane do funkcji
 """
 
 a = 2
